@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    background: pink;
+}
+ul {
+    list-style: none;
+}
+
+#outer {
+    z-index: 66;
+    width: 800px;
+    height: 500px;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+    border: lightsalmon solid 50px;
+}
+
+.switer {
+    position: absolute;
+    left: -800px;
+    width: 4800px;
+    height: 500px;
+}
+
+.switer img {
+    width: 800px;
+    height: 500px;
+}
+
+.switer div {
+    float: left;
+}
+
+#focus {
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 10px;
+}
+
+#focus li {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #EEE;
+    float: left;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#focus li.select {
+    background: #ff6700;
+}
+
+#left, #right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("../img/icon-slides.png") no-repeat;
+    width: 30px;
+    height: 100px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#left {
+    left: 0;
+    background-position: -3px;
+}
+
+#right {
+    right: 0;
+    background-position: -50px;
+}
